@@ -12,7 +12,7 @@ event.preventDefault()
 messageone.textContent = 'Loading...'
 messagetwo.textContent = ''
 const location=search.value
-const target = 'http://localhost:3000/weather?address='+location
+const target = '/weather?address='+location
 fetch(target).then((response)=>{
     response.json().then((data)=>{
         if(data.error)
